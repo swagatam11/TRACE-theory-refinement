@@ -5,7 +5,7 @@
 
 ## What is provided
 
-- `code/synthetic_benchmark_v1/v6_one_shot/`: the actual v6.3 three-round proposer–adversary workflow, arm A and B comparators, evidence desk, schemas and no-cost unit tests; reconstructed by layering the author's reviewed patch archives in order. `generator.py`, `validate_v6.py`, and `admin_score.py`, plus generator-dependent tests, intentionally reside **only in a separate administrator archive**, because they contain or access hidden causal truth.
+- `code/synthetic_benchmark_v1/v6_one_shot/`: the actual v6.3 three-round proposer–adversary workflow, arm A and B comparators, evidence desk, schemas and no-cost unit tests; reconstructed by layering the earlier reviewed patch archives in order. `generator.py`, `validate_v6.py`, and `admin_score.py`, plus generator-dependent tests, intentionally reside **only in a separate administrator archive**, because they contain or access hidden causal truth.
 - `code/synthetic_benchmark_v1/preflight_rebuild/transport.py`: frozen bounded request mock/transport contract.
 - `code/src/stigma_framing/`: support dependencies from the earlier audited project. The guarded live runner depends on additional persistent historical budget ledgers, provider credentials and project configuration; **do not interpret this archive as a plug-and-play authorized live API service**.
 - `data/.../public/development/dev_03/`: authentic baseline and follow-up synthetic datasets for the demonstration. `public/manifest.json` is the original full-manifest file; other cases are intentionally not shipped. `live_v6.py inspect` supports the included `dev_03` case only.
@@ -36,7 +36,7 @@ python verify_locked_demo.py
 
 On Windows PowerShell use `$env:PYTHONPATH="code/synthetic_benchmark_v1/v6_one_shot;code/synthetic_benchmark_v1/preflight_rebuild;code/src"` instead of `export`. Running `inspect` **does not initiate provider calls**.
 
-The public archive runs **7 public offline unit tests**; the separately held full administrator source suite passed **55 offline tests** before packaging. `live` requires a separately authorized API connection and the full historical guarded-ledger project; it is intentionally **not approved for use from this archive**. Do not interpret this stage-1 release as an invitation to rerun paid trials.
+The public archive runs **7 public offline unit tests**; the separately held full administrator source suite passed **55 offline tests** before packaging. `live` requires a separately authorized API connection and the full historical guarded-ledger project; **The Stage 1 artifact** is an offline replay by design; no provider calls are needed. A live harness that runs with a user-supplied API key is a Stage 2 deliverable.
 
 ## Research status and limits
 
@@ -46,6 +46,6 @@ The study is synthetic expressed interest, not actual organizational adoption or
 
 ## Sharing separation
 
-**Public repo candidate:** this archive, after authorial review of the raw prompts/responses and journal anonymization requirements.  
+**Public research artifact for the Stage 1 submission.**  
 **Keep private:** administrator causal generator, private truth and holdout datasets; they are retained in the separately delivered `TRACE_ADMIN_PRIVATE_REPRODUCIBILITY.zip` archive.  
 No API keys or credential files, encrypted reasoning contents, private causal equations, or holdout files are included.
