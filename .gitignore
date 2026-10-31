@@ -1,0 +1,19 @@
+# Local and generated files; scientific files in the release are unchanged.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.DS_Store
+Thumbs.db
+# Keep administrator-only materials out of a public repository.
+TRACE_ADMIN_PRIVATE*
+*ADMIN_PRIVATE*.zip
+admin_private/
+private_holdout/
+*.log
