@@ -1,0 +1,62 @@
+{
+  "record": {
+    "contrasting_predictions": "Under faithful interventions that fix only the named mediator, the serial graph predicts no effect of X on either V or Y when L is fixed at zero, and no effect of X on Y when V is fixed at zero. The usefulness-only graph permits X effects on V and Y when L is fixed, but predicts no X effect on Y when V is fixed. The parallel counterproposal permits an X effect on Y in both settings: through usefulness with L fixed and through legitimacy with V fixed. It also permits an X effect on V with L fixed. These are permitted effects, not guaranteed nonzero effects: interactions, cancellation, or zero-specific boundary conditions could eliminate them.",
+    "counter_mechanism": {
+      "canonicalization_audit": [],
+      "description": "Relational descriptions can independently broaden organizational authorization to consider an innovation and reveal useful task applications. Legitimacy and usefulness then provide separate reasons for expressing adoption interest, without either perception necessarily preceding the other. Unmeasured evaluator dispositions can additionally produce correlated legitimacy, usefulness, and interest ratings. The framing benefit should be greatest when both organizational authorization and recognizable applications are open to reinterpretation; it may weaken or reverse when disability-specific language supplies authorization or communicates essential specialized capabilities.",
+      "edges": [
+        [
+          "X",
+          "L"
+        ],
+        [
+          "X",
+          "V"
+        ],
+        [
+          "L",
+          "Y"
+        ],
+        [
+          "V",
+          "Y"
+        ],
+        [
+          "latent_evaluator_dispositions",
+          "L"
+        ],
+        [
+          "latent_evaluator_dispositions",
+          "V"
+        ],
+        [
+          "latent_evaluator_dispositions",
+          "Y"
+        ]
+      ],
+      "id": "3_parallel_authorization_and_application",
+      "node_types": {
+        "L": "measured",
+        "V": "measured",
+        "X": "measured",
+        "Y": "measured",
+        "latent_evaluator_dispositions": "latent"
+      },
+      "nodes": [
+        "X",
+        "L",
+        "V",
+        "Y",
+        "latent_evaluator_dispositions"
+      ]
+    },
+    "disagreement": "The first graph imposes an unsupported causal ordering and two strong exclusions: framing cannot change usefulness except through legitimacy, and legitimacy cannot affect interest except through usefulness. The second graph avoids the ordering claim but instead excludes any causal contribution of legitimacy. Randomizing descriptions identifies framing effects, not the ordering or causal importance of the resulting perception scores. Correlated scores could reflect parallel pathways plus shared evaluator dispositions rather than a serial process.",
+    "rationale": "Authorization and practical value are conceptually distinct organizational considerations. An evaluator may see a technology as useful yet outside the organization's remit, or legitimate to consider yet practically unhelpful. Neither distinction requires legitimacy to temporally precede usefulness. Baseline mediation regressions cannot settle this because post-description ratings may share unmeasured causes; conditioning on them can also introduce selection bias. The experimental mediator-fixing datasets offer sharper tests of the graphs' exclusions, provided fixing a score actually intervenes on the proposed psychological construct without changing other pathways. The encouragement assignments are not automatically valid mediator instruments because their exclusion assumptions are explicitly unestablished.",
+    "remaining_uncertainty": "No results have been supplied, so neither the provisional ranking nor this counterproposal is empirically established. Separate study populations, psychological side effects of fixing scores, and interactions at zero could complicate comparisons. Even residual framing effects under both mediator interventions would not uniquely establish parallel mediation: omitted direct framing effects could produce the same pattern. The proposed contextual moderators remain theoretical unless suitable pre-description measures are available; the timing of F and Q is unspecified.",
+    "requests": [
+      "Possible analysis idea, not an evidence request at this stage: estimate the randomized description effect on usefulness and adoption interest in the legitimacy-fixed dataset, and on adoption interest in the usefulness-fixed dataset, reporting uncertainty and checking whether the assigned mediator was actually held at zero. Compare these patterns with the three graphs' predicted exclusions.",
+      "Possible analysis idea, not an evidence request at this stage: estimate the baseline randomized description effects on legitimacy, usefulness, and interest, then describe how the interest effect differs across the baseline and mediator-fixed studies. Treat cross-study differences cautiously unless population comparability and intervention implementation support interpreting them as pathway blocking."
+    ]
+  },
+  "stage": "C_round_2_challenge"
+}

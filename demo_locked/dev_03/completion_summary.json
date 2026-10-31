@@ -1,0 +1,11 @@
+{
+  "case": "dev_03",
+  "guarded_end_nano": 8196162500,
+  "no_unblinding": true,
+  "science_locked": true,
+  "statuses": {
+    "A": "completed",
+    "B": "completed",
+    "C": "completed"
+  }
+}

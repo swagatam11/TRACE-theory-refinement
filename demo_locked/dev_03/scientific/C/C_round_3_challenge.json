@@ -1,0 +1,63 @@
+{
+  "record": {
+    "contrasting_predictions": "Under the serial counterproposal, fixing legitimacy at zero removes framing effects on both usefulness and interest; fixing usefulness at zero removes the framing effect on interest but preserves its effect on legitimacy. Under primary graph 1, fixing legitimacy leaves the usefulness pathway available, while fixing usefulness leaves the legitimacy pathway available. Under primary graph 2, fixing legitimacy likewise leaves the usefulness pathway available, but fixing usefulness eliminates the interest effect. These contrasts concern randomized description effects within each intervention dataset, not associations obtained by conditioning on observed mediator scores. Nonzero surviving effects require active pathways without exact cancellation.",
+    "counter_mechanism": {
+      "canonicalization_audit": [],
+      "description": "Relational descriptions first authorize evaluators to regard an assistive technology as relevant to their organization rather than as a narrowly disability-bound offering. This legitimacy expands the applications they seriously consider, increasing perceived usefulness and ultimately adoption interest. Legitimacy is therefore upstream of usefulness, not an independent contributor to interest.",
+      "edges": [
+        [
+          "X",
+          "L"
+        ],
+        [
+          "L",
+          "V"
+        ],
+        [
+          "V",
+          "Y"
+        ],
+        [
+          "latent_evaluator_dispositions",
+          "L"
+        ],
+        [
+          "latent_evaluator_dispositions",
+          "V"
+        ],
+        [
+          "latent_evaluator_dispositions",
+          "Y"
+        ],
+        [
+          "latent_pre_description_task_applicability",
+          "V"
+        ]
+      ],
+      "id": "3_legitimacy_gates_usefulness",
+      "node_types": {
+        "L": "measured",
+        "V": "measured",
+        "X": "measured",
+        "Y": "measured",
+        "latent_evaluator_dispositions": "latent",
+        "latent_pre_description_task_applicability": "latent"
+      },
+      "nodes": [
+        "X",
+        "L",
+        "V",
+        "Y",
+        "latent_evaluator_dispositions",
+        "latent_pre_description_task_applicability"
+      ]
+    },
+    "disagreement": "Both primary graphs assume that framing changes usefulness without first changing legitimacy. That shared assumption is the strongest unresolved vulnerability. Correlated post-description ratings cannot establish independent pathways, and the first graph's theoretical ranking is not empirical support for parallel mediation.",
+    "rationale": "The serial mechanism explains how relational language could broaden organizational consideration without assuming two independent psychological responses. It predicts benefits where disability-bound categorization initially prevents evaluators from considering otherwise credible applications. Benefits should be weaker when legitimacy is already secure, and legitimacy gains alone should not produce adoption interest when useful applications remain absent. The existing mediator-fixing datasets potentially distinguish these structures much more directly than baseline mediation regressions, despite allowing common evaluator dispositions to confound mediator–outcome associations.",
+    "remaining_uncertainty": "No results have been supplied, so none of these graphs deserves empirical priority yet. Cross-evaluation differences could reflect population or procedural differences rather than mediator interventions. Fixing a score must genuinely intervene on the proposed psychological state, rather than merely overwrite its recorded value. Null effects require sufficiently precise estimates and cannot alone establish absent pathways. Encouragement assignments are not automatically valid instruments because their exclusion assumptions are unestablished. Expressed adoption interest also does not establish actual organizational adoption.",
+    "requests": [
+      "One possible discriminating analysis would estimate the randomized relational-versus-attribute-bound description effects on legitimacy, usefulness, and adoption interest separately in the baseline, legitimacy-fixed-at-zero, and usefulness-fixed-at-zero datasets, with uncertainty intervals and explicit comparisons of the effects across datasets. The key separating observation is whether fixing legitimacy removes the description effect on usefulness; the interest effects under both fixed-score conditions would then help distinguish the serial, parallel, and usefulness-only explanations. Interpretation should assess whether the separate evaluations used comparable populations and procedures."
+    ]
+  },
+  "stage": "C_round_3_challenge"
+}

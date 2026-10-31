@@ -1,0 +1,105 @@
+{
+  "record": {
+    "primary": [
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 1, provisionally on theoretical grounds only: Relational descriptions can both authorize organizational consideration and communicate credible applications across people, tasks, and environments. Legitimacy and usefulness independently increase adoption interest. Benefits are expected where organizational relevance and task applications are both open to reinterpretation; they may weaken or reverse where disability-specific language establishes essential expertise, eligibility, or specialized fit. The graph is a restrictive benchmark, not evidence that its pathways exist.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "L",
+            "Y"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "1_parallel_authorization_and_application",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions"
+        ]
+      },
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 2, and the strongest causal challenge to the parallel account: Relational descriptions first make the technology legitimate for organizational consideration. That authorization expands the applications evaluators seriously consider, increasing usefulness and then adoption interest. Benefits should be greatest where disability-bound categorization initially excludes otherwise credible applications. They should be smaller when legitimacy is already secure, and legitimacy gains should not increase interest if useful applications remain absent.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "L",
+            "V"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "2_legitimacy_gates_usefulness",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions"
+        ]
+      }
+    ],
+    "retired_or_deprioritized_ids": [
+      "3_usefulness_without_causal_legitimacy"
+    ],
+    "selection_rule": "first_two_model_ranked_before_any_test_results"
+  },
+  "stage": "C_round_3_priority"
+}

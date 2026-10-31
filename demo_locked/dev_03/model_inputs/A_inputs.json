@@ -1,0 +1,12 @@
+[
+  {
+    "stage_number": 1,
+    "arm": "A",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "How and under what conditions might relational rather than disability-attribute-bound descriptions of assistive-technology innovations influence organizational interest in adopting them? Develop a theoretical explanation and describe how a researcher might investigate it.",
+    "output_format": "text",
+    "max_output_tokens": 2400
+  }
+]

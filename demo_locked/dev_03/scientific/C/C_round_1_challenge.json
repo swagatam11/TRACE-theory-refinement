@@ -1,0 +1,57 @@
+{
+  "record": {
+    "contrasting_predictions": "In the baseline, relational framing can increase L, V, and Y under all three explanations, so those associations alone are weak discriminators. Under the proposed serial DAG, fixing L at zero removes the framing effects on both V and Y; fixing V at zero removes the framing effect on Y while preserving its effect on L. The legitimacy-only graph instead predicts that fixing V leaves the framing effect on Y intact. The usefulness-only graph predicts that fixing L leaves the framing effects on V and Y intact. These contrasts assume genuine score interventions that do not otherwise alter the evaluation process, and a nonzero baseline framing effect.",
+    "counter_mechanism": {
+      "canonicalization_audit": [],
+      "description": "Relational framing may first make an assistive technology seem organizationally appropriate. That legitimacy licenses evaluators to consider its task applications, raising perceived usefulness and then adoption interest. Legitimacy and usefulness are therefore sequential complements, not competing explanations. This deliberately restrictive counterproposal assumes no direct framing-to-usefulness or legitimacy-to-interest pathway.",
+      "edges": [
+        [
+          "X",
+          "L"
+        ],
+        [
+          "L",
+          "V"
+        ],
+        [
+          "V",
+          "Y"
+        ],
+        [
+          "latent_background_evaluation_dispositions",
+          "L"
+        ],
+        [
+          "latent_background_evaluation_dispositions",
+          "Y"
+        ],
+        [
+          "latent_task_applicability",
+          "V"
+        ]
+      ],
+      "id": "3_legitimacy_enables_usefulness",
+      "node_types": {
+        "L": "measured",
+        "V": "measured",
+        "X": "measured",
+        "Y": "measured",
+        "latent_background_evaluation_dispositions": "latent",
+        "latent_task_applicability": "latent"
+      },
+      "nodes": [
+        "X",
+        "L",
+        "V",
+        "Y",
+        "latent_background_evaluation_dispositions",
+        "latent_task_applicability"
+      ]
+    },
+    "disagreement": "Both primary graphs assume away a potentially central causal link between legitimacy and usefulness. Organizational appropriateness may determine whether evaluators even regard an innovation's applications as relevant. Treating L and V as rival, parallel responses to framing could therefore misidentify sequential mediation as evidence for just one mechanism.",
+    "rationale": "The strongest unsupported assumption in the primary rivals is their exclusive assignment of causal influence to one perception. A plausible organizational process is that a disability-bound description marks an innovation as outside the organization's remit, preventing evaluators from translating technical capabilities into useful applications. Relational framing can remove that gate. Its benefit should consequently be greatest where organizational legitimacy is initially contested but credible task applications exist. It should be small where legitimacy is already secure or task applicability is absent, and could reverse where disability-specific identification itself supplies legitimacy. These conditions are theoretical predictions, not established findings. The existing randomized description and score-fixing datasets provide a way to investigate the intervention predictions without treating observational mediator associations as causal evidence.",
+    "remaining_uncertainty": "No results have been examined. Both mediators could also have independent effects, or usefulness could precede legitimacy; the serial DAG is a substantive counterproposal rather than an established ordering. Cross-dataset comparisons require comparable populations and intervention implementations. Fixing a score at zero may create floor effects or change the evaluation context, and encouragement assignments cannot identify mediator effects without defensible exclusion assumptions. Technical fit may help characterize heterogeneity only if its measurement timing and causal status support that interpretation. Expressed interest is not actual organizational adoption.",
+    "requests": []
+  },
+  "stage": "C_round_1_challenge"
+}

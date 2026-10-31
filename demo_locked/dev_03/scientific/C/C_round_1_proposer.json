@@ -1,0 +1,151 @@
+{
+  "record": {
+    "changes_or_reason_for_no_change": "Added the serial DAG and promoted it above the original rivals. Retained direct usefulness because relational wording can communicate task applications without legitimacy being a prerequisite. Deprioritized legitimacy-only because it excludes instrumental valuation despite adoption being a technology-use decision; it remains plausible for appropriateness-driven purchasing. Pure response-demand explanations are also lower priority because they offer less specific organizational predictions, although the simulated outcome leaves them possible. To investigate, estimate randomized X contrasts on L, V, and Y separately within the baseline and each existing score-fixing evaluation, report uncertainty, and compare the pattern with the stated restrictions. Avoid conditioning on observed mediators as though this identifies mediation. Cross-evaluation contrasts require comparable populations and evaluation contexts. Use Q and F for precision or effect-modification analysis only after establishing that they are pre-treatment measures rather than framing-induced perceptions. This is an investigation strategy, not an evidence request.",
+    "mechanisms": [
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 1, provisionally: Relational descriptions make assistive technology appear relevant to the organization's remit, enabling evaluators to recognize useful task applications. Legitimacy L therefore precedes usefulness V, which increases adoption interest Y. This is a restrictive serial mechanism: there is no direct X-to-V or L-to-Y pathway. Benefits should be greatest when organizational legitimacy is initially contested but credible task applications exist; they should weaken when legitimacy is already secure or applications are absent, and may reverse when disability-specific identification supplies legitimacy. Its first-place ranking reflects theoretical plausibility, not empirical support.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "L",
+            "V"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ],
+          [
+            "latent_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "1_legitimacy_enables_usefulness",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_background_evaluation_dispositions",
+          "latent_task_applicability"
+        ]
+      },
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 2: Relational descriptions directly reveal how technology addresses interactions among people, tasks, and environments, increasing perceived usefulness V and adoption interest Y. Legitimacy L can respond to framing without causing interest or usefulness. This mechanism is strongest where evaluators recognize credible applications to organizational tasks, even when organizational legitimacy is already secure. Benefits may disappear or reverse if broader wording obscures specialized requirements or weakens perceived fit.",
+        "edges": [
+          [
+            "X",
+            "V"
+          ],
+          [
+            "X",
+            "L"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_task_applicability",
+            "V"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "V"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "2_usefulness_and_application_scope",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "V",
+          "L",
+          "Y",
+          "latent_task_applicability",
+          "latent_background_evaluation_dispositions"
+        ]
+      },
+      {
+        "canonicalization_audit": [],
+        "description": "Lower-priority but distinguishable alternative: Relational descriptions weaken stigmatizing category associations and increase organizational appropriateness L, which directly increases interest Y. Framing can change usefulness V, but usefulness has no causal effect on interest in this restrictive model. This pathway is plausible where purchasing is driven by appropriateness or reputational considerations independently of instrumental value. It should weaken or reverse where disability-specific categorization provides institutional legitimacy.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "L",
+            "Y"
+          ],
+          [
+            "latent_disability_category_stigma",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "3_legitimacy_and_stigma",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_disability_category_stigma": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_disability_category_stigma",
+          "latent_background_evaluation_dispositions"
+        ]
+      }
+    ],
+    "remaining_uncertainty": "No results have been examined, so the ranking is theoretical. Parallel pathways, reverse V-to-L ordering, direct framing effects, or mixed mechanisms remain possible; the restrictive DAGs are discriminating benchmarks rather than exhaustive accounts. Blocking both single-mediator pathways would be consistent with serial mediation but would not uniquely establish its ordering: complementary parallel pathways could also require both mediators. Fixing a score at zero must change the underlying perception, not merely its recorded value, and could introduce floor effects or alter the evaluation process. Encouragement assignments do not identify mediator effects without defensible exclusion assumptions. The available variables do not directly measure the proposed stigma and remit boundary conditions. Expressed adoption interest need not translate into procurement or sustained use.",
+    "reply_to_counterargument": "The challenge is scientifically warranted: the original exclusive-mediator graphs omitted a plausible legitimacy-to-usefulness link. I now rank serial mediation first, while retaining direct usefulness as the strongest rival. A falsifiable distinction is available under genuine, process-preserving mediator interventions and a nonzero baseline framing effect. The serial model predicts that fixing L removes X's effects on both V and Y, whereas fixing V removes its effect on Y but preserves its effect on L. Direct usefulness predicts that X still affects V and Y when L is fixed. Direct legitimacy predicts that X still affects Y when V is fixed. These are model predictions, not observed results."
+  },
+  "stage": "C_round_1_proposer"
+}

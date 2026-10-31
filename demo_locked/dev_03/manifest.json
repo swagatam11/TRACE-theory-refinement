@@ -1,0 +1,35 @@
+{
+  "adversarial_rounds_C": 3,
+  "arms_sha256": "df7345f8d67cf34e652b7d95e45ee85fa05c7e6253065b7670cf8bb5dfa8e770",
+  "authorized_additional_nano": 1000000000,
+  "case": "dev_03",
+  "dataset": "EATD-V6-ONE-SHOT",
+  "evidence_desk_sha256": "6cd30205d0d4cd7d77af8c197124b97f73d834499f2afc58a40ca2d92fc0cd7c",
+  "evidence_opportunities_per_arm": {
+    "A": 0,
+    "B": 1,
+    "C": 1
+  },
+  "guarded_ceiling_nano": 9034407500,
+  "guarded_start_nano": 8034407500,
+  "max_model_calls_total": {
+    "A": 1,
+    "B": 2,
+    "C": 10
+  },
+  "max_tests_in_single_batch": 2,
+  "no_holdout": true,
+  "no_retries": true,
+  "partition": "development",
+  "pre_evidence_and_final_model_calls": {
+    "A": 1,
+    "B": 2,
+    "C": 8
+  },
+  "schema_sha256": "b81b35ff497f04d53542e18263a04c6b1c90b7f17ef90f7a209a9bda5ee690f8",
+  "scientific_calls_C": 8,
+  "scientific_protocol": "EATD-v6.3-DATA-INVENTORY-ONE-SHOT",
+  "source_manifest_sha256": "70f82b9b002802efb6372c6c7dde066dcf260fa8c9fe64627ffcee7a56fb102f",
+  "technical_repair_only": true,
+  "technical_repairs_C_max": 2
+}

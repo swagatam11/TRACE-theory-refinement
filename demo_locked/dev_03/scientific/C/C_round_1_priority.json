@@ -1,0 +1,105 @@
+{
+  "record": {
+    "primary": [
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 1, provisionally: Relational descriptions make assistive technology appear relevant to the organization's remit, enabling evaluators to recognize useful task applications. Legitimacy L therefore precedes usefulness V, which increases adoption interest Y. This is a restrictive serial mechanism: there is no direct X-to-V or L-to-Y pathway. Benefits should be greatest when organizational legitimacy is initially contested but credible task applications exist; they should weaken when legitimacy is already secure or applications are absent, and may reverse when disability-specific identification supplies legitimacy. Its first-place ranking reflects theoretical plausibility, not empirical support.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "L",
+            "V"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ],
+          [
+            "latent_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "1_legitimacy_enables_usefulness",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_background_evaluation_dispositions",
+          "latent_task_applicability"
+        ]
+      },
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 2: Relational descriptions directly reveal how technology addresses interactions among people, tasks, and environments, increasing perceived usefulness V and adoption interest Y. Legitimacy L can respond to framing without causing interest or usefulness. This mechanism is strongest where evaluators recognize credible applications to organizational tasks, even when organizational legitimacy is already secure. Benefits may disappear or reverse if broader wording obscures specialized requirements or weakens perceived fit.",
+        "edges": [
+          [
+            "X",
+            "V"
+          ],
+          [
+            "X",
+            "L"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_task_applicability",
+            "V"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "V"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "2_usefulness_and_application_scope",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "V",
+          "L",
+          "Y",
+          "latent_task_applicability",
+          "latent_background_evaluation_dispositions"
+        ]
+      }
+    ],
+    "retired_or_deprioritized_ids": [
+      "3_legitimacy_and_stigma"
+    ],
+    "selection_rule": "first_two_model_ranked_before_any_test_results"
+  },
+  "stage": "C_round_1_priority"
+}

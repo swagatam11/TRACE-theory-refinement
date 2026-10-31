@@ -1,0 +1,188 @@
+{
+  "record": {
+    "changes_or_reason_for_no_change": "Promoted the parallel mechanism to first place, retained usefulness-only second, and demoted strict serial mediation to a context-specific benchmark. Legitimacy-only is lower priority because it excludes an independently plausible instrumental route; reverse ordering remains possible but presently lacks a stronger theoretical basis. Pure response-demand accounts are lower priority because they make fewer specific organizational predictions, not because they have been ruled out. Investigation should distinguish randomized total framing effects from causal mediation. In the existing studies, within-study randomized X contrasts on V and Y under legitimacy fixing, and on Y under usefulness fixing, would probe the stated exclusions; baseline contrasts would establish framing effects on the measured outcomes. This is an analytic rationale, not a new evidence request. Baseline mediation regressions cannot resolve shared unmeasured causes. Cross-study effect differences require population comparability and intervention fidelity, and encouragement assignments cannot be treated as valid mediator instruments without defending their exclusion assumptions. Contextual moderation by F or Q is interpretable as baseline heterogeneity only if those measures precede description assignment; otherwise conditioning on them could introduce bias.",
+    "mechanisms": [
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_pre_description_organizational_context",
+            "original": "pre_description_organizational_context"
+          },
+          {
+            "canonical": "latent_pre_description_task_applicability",
+            "original": "pre_description_task_applicability"
+          }
+        ],
+        "description": "Rank 1, theoretically rather than empirically: Relational descriptions can independently make an innovation legitimate for organizational consideration and reveal useful applications involving people, tasks, and environments. Legitimacy and usefulness each increase expressed adoption interest; neither must precede the other. Shared evaluator dispositions can correlate all three ratings without explaining away these possible causal pathways. Framing benefits should be greatest where organizational authorization and credible applications are both open to reinterpretation. Benefits may weaken or reverse where disability-specific descriptions establish purchasing obligations or communicate essential specialized capabilities. These contextual predictions are hypotheses, not findings.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "L",
+            "Y"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ],
+          [
+            "latent_pre_description_organizational_context",
+            "L"
+          ],
+          [
+            "latent_pre_description_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "1_parallel_authorization_and_application",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent",
+          "latent_pre_description_organizational_context": "latent",
+          "latent_pre_description_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions",
+          "latent_pre_description_organizational_context",
+          "latent_pre_description_task_applicability"
+        ]
+      },
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_pre_description_task_applicability",
+            "original": "pre_description_task_applicability"
+          }
+        ],
+        "description": "Rank 2: Relational descriptions primarily reveal practical applications, increasing usefulness and thereby adoption interest. Legitimacy may also change, but is not itself a cause of usefulness or interest in this restrictive rival. This is plausible where organizational authorization is already secure and instrumental evaluation dominates. Benefits should be strongest when descriptions reveal credible task applications, and can disappear or reverse when broader wording obscures specialized requirements. Shared evaluator dispositions can make legitimacy correlate with usefulness and interest even without a causal legitimacy pathway.",
+        "edges": [
+          [
+            "X",
+            "V"
+          ],
+          [
+            "X",
+            "L"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ],
+          [
+            "latent_pre_description_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "2_usefulness_and_application_scope",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent",
+          "latent_pre_description_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions",
+          "latent_pre_description_task_applicability"
+        ]
+      },
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_pre_description_task_applicability",
+            "original": "pre_description_task_applicability"
+          }
+        ],
+        "description": "Deprioritized but retained as a falsifiable benchmark: Relational framing first establishes organizational legitimacy, which enables recognition of usefulness and thereby increases interest. This strict serial mechanism is plausible when evaluators will not consider applications until an innovation is recognized as within their remit. However, that gatekeeping condition does not warrant assuming this ordering generally. The graph excludes direct framing-to-usefulness and legitimacy-to-interest pathways.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "L",
+            "V"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ],
+          [
+            "latent_pre_description_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "3_legitimacy_enables_usefulness",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_pre_description_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_background_evaluation_dispositions",
+          "latent_pre_description_task_applicability"
+        ]
+      }
+    ],
+    "remaining_uncertainty": "All rankings remain theoretical. Fixing a numerical score may not faithfully manipulate its psychological construct, may affect other pathways, or may create a special boundary condition at zero. Interactions and cancellation can produce null effects even when pathways exist, so null contrasts alone would not establish a particular graph. The DAGs are deliberately restrictive rivals rather than an exhaustive model; direct framing effects, mixed serial-parallel mechanisms, and reverse ordering remain live. The proposed contextual moderators require appropriate pre-description measurement, and simulated expressed interest need not translate into procurement or sustained use.",
+    "reply_to_counterargument": "I accept the central objection: randomizing descriptions does not establish an ordering between legitimacy and usefulness, and my previous first-place ranking imposed unjustified exclusions. Parallel authorization and practical valuation are now the leading explanation. The challenge is falsifiable under faithful mediator interventions: an X effect on V or Y with L fixed contradicts the strict serial graph; an X effect on Y with V fixed contradicts both the strict serial and usefulness-only graphs. Parallel mediation permits residual interest effects under either intervention but does not require them. Such residual effects would not uniquely establish parallel mediation because omitted direct framing pathways could also produce them. No results have been supplied."
+  },
+  "stage": "C_round_2_proposer"
+}

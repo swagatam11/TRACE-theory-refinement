@@ -1,0 +1,137 @@
+{
+  "record": {
+    "primary": [
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_pre_description_organizational_context",
+            "original": "pre_description_organizational_context"
+          },
+          {
+            "canonical": "latent_pre_description_task_applicability",
+            "original": "pre_description_task_applicability"
+          }
+        ],
+        "description": "Rank 1, theoretically rather than empirically: Relational descriptions can independently make an innovation legitimate for organizational consideration and reveal useful applications involving people, tasks, and environments. Legitimacy and usefulness each increase expressed adoption interest; neither must precede the other. Shared evaluator dispositions can correlate all three ratings without explaining away these possible causal pathways. Framing benefits should be greatest where organizational authorization and credible applications are both open to reinterpretation. Benefits may weaken or reverse where disability-specific descriptions establish purchasing obligations or communicate essential specialized capabilities. These contextual predictions are hypotheses, not findings.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "L",
+            "Y"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ],
+          [
+            "latent_pre_description_organizational_context",
+            "L"
+          ],
+          [
+            "latent_pre_description_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "1_parallel_authorization_and_application",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent",
+          "latent_pre_description_organizational_context": "latent",
+          "latent_pre_description_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions",
+          "latent_pre_description_organizational_context",
+          "latent_pre_description_task_applicability"
+        ]
+      },
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_pre_description_task_applicability",
+            "original": "pre_description_task_applicability"
+          }
+        ],
+        "description": "Rank 2: Relational descriptions primarily reveal practical applications, increasing usefulness and thereby adoption interest. Legitimacy may also change, but is not itself a cause of usefulness or interest in this restrictive rival. This is plausible where organizational authorization is already secure and instrumental evaluation dominates. Benefits should be strongest when descriptions reveal credible task applications, and can disappear or reverse when broader wording obscures specialized requirements. Shared evaluator dispositions can make legitimacy correlate with usefulness and interest even without a causal legitimacy pathway.",
+        "edges": [
+          [
+            "X",
+            "V"
+          ],
+          [
+            "X",
+            "L"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ],
+          [
+            "latent_pre_description_task_applicability",
+            "V"
+          ]
+        ],
+        "id": "2_usefulness_and_application_scope",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent",
+          "latent_pre_description_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions",
+          "latent_pre_description_task_applicability"
+        ]
+      }
+    ],
+    "retired_or_deprioritized_ids": [
+      "3_legitimacy_enables_usefulness"
+    ],
+    "selection_rule": "first_two_model_ranked_before_any_test_results"
+  },
+  "stage": "C_round_2_priority"
+}

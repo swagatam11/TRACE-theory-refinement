@@ -1,0 +1,119 @@
+{
+  "record": {
+    "mechanisms": [
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_disability_category_stigma",
+            "original": "Disability-category stigma"
+          },
+          {
+            "canonical": "latent_background_evaluation_dispositions",
+            "original": "Background evaluation dispositions"
+          }
+        ],
+        "description": "Primary rival 1: Relational descriptions situate assistive technology in interactions between people, tasks and environments rather than defining it through disability attributes. This may weaken stigmatizing category associations and make adoption appear more organizationally appropriate, increasing interest through perceived legitimacy L. The effect should be strongest where disability-linked categories are devalued and organizational appropriateness matters to purchasing; it may disappear or reverse where disability-specific identification confers legitimacy. The DAG represents a deliberately restrictive rival: X can also change V, but V does not cause Y; the framing effect operates entirely through L. Background evaluation dispositions may confound L–Y, so randomized X does not identify mediation from score associations. Assumptions include valid randomization, consistent descriptions, no interference, and no additional direct or mediated X–Y pathway. Evidence request, analysis 1 of two: Estimate the randomized X contrast in Y separately in the baseline dataset and the existing evaluation fixing L at zero; report uncertainty and compare contrasts. Also report randomized X contrasts in L and V within these same datasets as supporting checks. This mechanism predicts a baseline effect but no X effect on Y when L is fixed. That comparison is informative only if fixing L implements the intended intervention without changing other response pathways and populations are comparable or appropriately standardized. Zero may be an unusual legitimacy level, and a null contrast alone would not establish mediation. Y measures simulated expressed interest, not actual adoption.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "latent_disability_category_stigma",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "L"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ],
+          [
+            "L",
+            "Y"
+          ]
+        ],
+        "id": "1_legitimacy_and_stigma",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_disability_category_stigma": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_disability_category_stigma",
+          "latent_background_evaluation_dispositions"
+        ]
+      },
+      {
+        "canonicalization_audit": [
+          {
+            "canonical": "latent_task_applicability",
+            "original": "Task applicability"
+          },
+          {
+            "canonical": "latent_background_evaluation_dispositions",
+            "original": "Background evaluation dispositions"
+          }
+        ],
+        "description": "Primary rival 2: Relational descriptions highlight task barriers and potential applications beyond a narrowly defined disability category. Evaluators consequently perceive greater usefulness V, increasing Y without requiring greater legitimacy to cause interest. This pathway should be strongest when evaluators can recognize relevant organizational tasks and the technology can plausibly address them; it should weaken or reverse when broader descriptions obscure specialized requirements or suggest poor fit. The restrictive DAG allows X to change L but assigns L no causal effect on Y; the framing effect operates entirely through V. Background evaluation dispositions may confound V–Y. Assumptions include valid randomization, consistency, no interference, and no other X–Y pathway. Evidence request, analysis 2 of two: Estimate the randomized X contrast in Y separately in the baseline dataset and the existing evaluation fixing V at zero; report uncertainty and compare contrasts. Also report randomized X contrasts in V and L within these datasets as supporting checks. This mechanism predicts elimination of the X effect when V is fixed, whereas the legitimacy rival predicts elimination when L is fixed. Selective elimination across the two requested analyses would distinguish these restrictive rivals more clearly than observational mediation regressions. Interpretation requires comparable populations and interventions that change only the specified mediator mechanism; neither condition is established by the inventory. Persistence under both interventions would challenge both pure mechanisms, while elimination under both could reflect interacting pathways rather than either rival alone. F and Q could inform fit-related boundary conditions only if their measurement timing and causal status justify treating them as pre-description characteristics; otherwise conditioning on them could introduce bias. Encouragement assignments are not assumed to identify mediator effects because exclusion restrictions are unestablished.",
+        "edges": [
+          [
+            "X",
+            "V"
+          ],
+          [
+            "X",
+            "L"
+          ],
+          [
+            "latent_task_applicability",
+            "V"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "V"
+          ],
+          [
+            "latent_background_evaluation_dispositions",
+            "Y"
+          ],
+          [
+            "V",
+            "Y"
+          ]
+        ],
+        "id": "2_usefulness_and_application_scope",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_background_evaluation_dispositions": "latent",
+          "latent_task_applicability": "latent"
+        },
+        "nodes": [
+          "X",
+          "V",
+          "L",
+          "Y",
+          "latent_task_applicability",
+          "latent_background_evaluation_dispositions"
+        ]
+      }
+    ]
+  },
+  "stage": "C_pre_evidence_graphs"
+}

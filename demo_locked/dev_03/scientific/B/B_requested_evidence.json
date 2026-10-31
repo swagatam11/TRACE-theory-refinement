@@ -1,0 +1,59 @@
+{
+  "record": {
+    "receipts": [
+      {
+        "no_substitution": true,
+        "reason": "A mediator comparison requires a specified intervention or analysis; no experiment was implied automatically.",
+        "requested": "In the randomized baseline evaluation, estimate the average effect of relational versus disability-attribute-bound description on adoption interest, perceived legitimacy, and perceived usefulness, with confidence intervals. If technical fit and technical quality were measured before description exposure, also estimate whether the description effect on interest varies with each, treating these as exploratory moderator tests; otherwise do not use them as baseline controls or moderators. Do not interpret associations among legitimacy, usefulness, and interest as causal mediation.",
+        "status": "infeasible"
+      },
+      {
+        "case_id": "dev_03",
+        "dataset_sha256": "c03f467cdcf0a77d33e5f4ec8a92d2f36717bf907c38f26cf02674b2e6ad2dfa",
+        "receipt_id": "TEST:dev_03:neutralize_l",
+        "requested": "For each separate intervention evaluation—legitimacy fixed at zero and usefulness fixed at zero—estimate the randomized effect of description on adoption interest, with confidence intervals, and compare each effect with the baseline randomized effect using an uncertainty interval for the difference. Report available information about sample and procedure comparability, whether the fixed score is on the baseline scale and within its observed range, and whether description still changes the other, unfixed score. Interpret the contrasts as effects under the imposed constraints, not automatically as identified mediation effects.",
+        "resolved_test": "neutralize_l",
+        "result": {
+          "design": "Fresh randomized X with targeted score fixed to zero under generating intervention; no claim of natural mediation identification.",
+          "randomized_X_effect_with_L_fixed": {
+            "ci95": [
+              0.4773160910637817,
+              0.7329253329270011
+            ],
+            "contrast": 0.6051207119953914,
+            "n_control": 1765,
+            "n_treatment": 1835,
+            "se": 0.06520643925082127
+          }
+        },
+        "status": "ok"
+      },
+      {
+        "case_id": "dev_03",
+        "dataset_sha256": "7ef238e532d14eaff3c9f5bb9d30c6f55b1d2b85fec24ac3573a124a4ce7a39d",
+        "receipt_id": "TEST:dev_03:neutralize_v",
+        "requested": "For each separate intervention evaluation—legitimacy fixed at zero and usefulness fixed at zero—estimate the randomized effect of description on adoption interest, with confidence intervals, and compare each effect with the baseline randomized effect using an uncertainty interval for the difference. Report available information about sample and procedure comparability, whether the fixed score is on the baseline scale and within its observed range, and whether description still changes the other, unfixed score. Interpret the contrasts as effects under the imposed constraints, not automatically as identified mediation effects.",
+        "resolved_test": "neutralize_v",
+        "result": {
+          "design": "Fresh randomized X with targeted score fixed to zero under generating intervention; no claim of natural mediation identification.",
+          "randomized_X_effect_with_V_fixed": {
+            "ci95": [
+              0.3067552418055411,
+              0.5243174428510071
+            ],
+            "contrast": 0.41553634232827413,
+            "n_control": 1753,
+            "n_treatment": 1847,
+            "se": 0.05550056149119033
+          }
+        },
+        "status": "ok"
+      }
+    ],
+    "verbatim_request": [
+      "In the randomized baseline evaluation, estimate the average effect of relational versus disability-attribute-bound description on adoption interest, perceived legitimacy, and perceived usefulness, with confidence intervals. If technical fit and technical quality were measured before description exposure, also estimate whether the description effect on interest varies with each, treating these as exploratory moderator tests; otherwise do not use them as baseline controls or moderators. Do not interpret associations among legitimacy, usefulness, and interest as causal mediation.",
+      "For each separate intervention evaluation—legitimacy fixed at zero and usefulness fixed at zero—estimate the randomized effect of description on adoption interest, with confidence intervals, and compare each effect with the baseline randomized effect using an uncertainty interval for the difference. Report available information about sample and procedure comparability, whether the fixed score is on the baseline scale and within its observed range, and whether description still changes the other, unfixed score. Interpret the contrasts as effects under the imposed constraints, not automatically as identified mediation effects."
+    ]
+  },
+  "stage": "B_requested_evidence"
+}

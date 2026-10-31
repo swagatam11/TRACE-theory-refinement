@@ -1,0 +1,53 @@
+{
+  "record": {
+    "receipts": [
+      {
+        "case_id": "dev_03",
+        "dataset_sha256": "c03f467cdcf0a77d33e5f4ec8a92d2f36717bf907c38f26cf02674b2e6ad2dfa",
+        "receipt_id": "TEST:dev_03:neutralize_l",
+        "requested": "Using the baseline and legitimacy-fixed-at-zero evaluations, estimate relational-minus-attribute-bound differences in usefulness, adoption interest, and legitimacy separately within each dataset, with uncertainty intervals. Report the fixed legitimacy distribution as an implementation check. Show cross-dataset differences in the usefulness and interest effects, but distinguish randomized within-dataset effects from comparisons across separate evaluations. From existing documentation, report whether fixing legitimacy changed the psychological state or only the recorded score, and whether recruitment and procedures were comparable. Do not condition on measured post-description mediators.",
+        "resolved_test": "neutralize_l",
+        "result": {
+          "design": "Fresh randomized X with targeted score fixed to zero under generating intervention; no claim of natural mediation identification.",
+          "randomized_X_effect_with_L_fixed": {
+            "ci95": [
+              0.4773160910637817,
+              0.7329253329270011
+            ],
+            "contrast": 0.6051207119953914,
+            "n_control": 1765,
+            "n_treatment": 1835,
+            "se": 0.06520643925082127
+          }
+        },
+        "status": "ok"
+      },
+      {
+        "case_id": "dev_03",
+        "dataset_sha256": "7ef238e532d14eaff3c9f5bb9d30c6f55b1d2b85fec24ac3573a124a4ce7a39d",
+        "receipt_id": "TEST:dev_03:neutralize_v",
+        "requested": "Using the baseline and legitimacy-fixed-at-zero evaluations, estimate relational-minus-attribute-bound differences in usefulness, adoption interest, and legitimacy separately within each dataset, with uncertainty intervals. Report the fixed legitimacy distribution as an implementation check. Show cross-dataset differences in the usefulness and interest effects, but distinguish randomized within-dataset effects from comparisons across separate evaluations. From existing documentation, report whether fixing legitimacy changed the psychological state or only the recorded score, and whether recruitment and procedures were comparable. Do not condition on measured post-description mediators.",
+        "resolved_test": "neutralize_v",
+        "result": {
+          "design": "Fresh randomized X with targeted score fixed to zero under generating intervention; no claim of natural mediation identification.",
+          "randomized_X_effect_with_V_fixed": {
+            "ci95": [
+              0.3067552418055411,
+              0.5243174428510071
+            ],
+            "contrast": 0.41553634232827413,
+            "n_control": 1753,
+            "n_treatment": 1847,
+            "se": 0.05550056149119033
+          }
+        },
+        "status": "ok"
+      }
+    ],
+    "verbatim_request": [
+      "Using the baseline and legitimacy-fixed-at-zero evaluations, estimate relational-minus-attribute-bound differences in usefulness, adoption interest, and legitimacy separately within each dataset, with uncertainty intervals. Report the fixed legitimacy distribution as an implementation check. Show cross-dataset differences in the usefulness and interest effects, but distinguish randomized within-dataset effects from comparisons across separate evaluations. From existing documentation, report whether fixing legitimacy changed the psychological state or only the recorded score, and whether recruitment and procedures were comparable. Do not condition on measured post-description mediators.",
+      "Using the usefulness-fixed-at-zero evaluation, estimate relational-minus-attribute-bound differences in adoption interest and legitimacy, with uncertainty intervals, and report the usefulness distribution as an implementation check. Compare these effects with the corresponding baseline estimates from the first analysis, clearly noting that cross-evaluation contrasts are not automatically randomized. From existing documentation, assess whether usefulness was psychologically fixed and whether other procedures changed. Report effect sizes and precision rather than using nonsignificance alone to declare a pathway absent."
+    ]
+  },
+  "stage": "C_requested_evidence"
+}

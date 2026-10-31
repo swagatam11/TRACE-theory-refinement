@@ -1,0 +1,155 @@
+{
+  "record": {
+    "changes_or_reason_for_no_change": "The strongest two rivals are now parallel authorization/application and legitimacy-gated usefulness; usefulness-only moves to third. Legitimacy-only is deprioritized because it omits instrumental valuation, although it could fit appropriateness-driven decisions. Reverse usefulness-to-legitimacy ordering, direct framing effects, and response-demand explanations remain possible but are less specifically motivated here, not disproven. I will not treat baseline mediation regressions as resolving the challenge. No evidence has yet been supplied.",
+    "contrasting_predictions": "Freeze before evidence: In a setting where the proposed positive pathways are active, the parallel account predicts positive X effects on V and Y with L fixed at zero, and a positive X effect on Y with V fixed at zero. The strict serial account predicts zero X effects on both V and Y with L fixed, and zero X effect on Y but a preserved X effect on L with V fixed. The usefulness-only account predicts positive X effects on V and Y with L fixed, but zero X effect on Y with V fixed. All three allow positive baseline effects on L, V, and Y, so baseline correlations cannot distinguish them. A surviving X effect on V under fixed L contradicts strict serial gating; a surviving X effect on Y under fixed V contradicts both restrictive usefulness-mediated accounts, subject to intervention validity. Failure to detect an effect is not evidence of an exact zero without adequate precision.",
+    "mechanisms": [
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 1, provisionally on theoretical grounds only: Relational descriptions can both authorize organizational consideration and communicate credible applications across people, tasks, and environments. Legitimacy and usefulness independently increase adoption interest. Benefits are expected where organizational relevance and task applications are both open to reinterpretation; they may weaken or reverse where disability-specific language establishes essential expertise, eligibility, or specialized fit. The graph is a restrictive benchmark, not evidence that its pathways exist.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "L",
+            "Y"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "1_parallel_authorization_and_application",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions"
+        ]
+      },
+      {
+        "canonicalization_audit": [],
+        "description": "Rank 2, and the strongest causal challenge to the parallel account: Relational descriptions first make the technology legitimate for organizational consideration. That authorization expands the applications evaluators seriously consider, increasing usefulness and then adoption interest. Benefits should be greatest where disability-bound categorization initially excludes otherwise credible applications. They should be smaller when legitimacy is already secure, and legitimacy gains should not increase interest if useful applications remain absent.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "L",
+            "V"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "2_legitimacy_gates_usefulness",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions"
+        ]
+      },
+      {
+        "canonicalization_audit": [],
+        "description": "Lower-priority but distinguishable benchmark: Relational descriptions reveal useful applications, which increase interest; legitimacy changes alongside usefulness but causes neither usefulness nor interest. This remains plausible when organizational authorization is already secure. It is deprioritized because it excludes the substantive possibility that legitimacy either authorizes consideration or independently supports adoption.",
+        "edges": [
+          [
+            "X",
+            "L"
+          ],
+          [
+            "X",
+            "V"
+          ],
+          [
+            "V",
+            "Y"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "L"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "V"
+          ],
+          [
+            "latent_evaluator_dispositions",
+            "Y"
+          ]
+        ],
+        "id": "3_usefulness_without_causal_legitimacy",
+        "node_types": {
+          "L": "measured",
+          "V": "measured",
+          "X": "measured",
+          "Y": "measured",
+          "latent_evaluator_dispositions": "latent"
+        },
+        "nodes": [
+          "X",
+          "L",
+          "V",
+          "Y",
+          "latent_evaluator_dispositions"
+        ]
+      }
+    ],
+    "remaining_uncertainty": "The interventions must fix psychological states rather than merely overwrite recorded scores, and must not introduce additional routes to interest. Zero may be a special boundary condition: an apparent blocked pathway could reflect an interaction rather than serial ordering. Separate evaluations may differ in populations or procedures. Null effects can reflect imprecision or cancellation, and surviving effects would reject restrictive graphs without identifying a unique replacement. Measured technical fit and quality cannot safely be treated as pre-description moderators unless their timing is established. Simulated expressed interest is not actual procurement or adoption.",
+    "reply_to_counterargument": "I accept the causal objection: correlated post-description ratings do not establish independent pathways, and my previous ranking gave insufficient priority to legitimacy as a prerequisite for usefulness. I therefore promote the serial account into the leading pair. I retain parallel pathways as a live rival because descriptions can directly convey task applications as well as organizational appropriateness; this is a theoretical possibility, not empirical support. The falsifiable dispute is whether randomized framing still changes usefulness when legitimacy is genuinely fixed, and whether it still changes interest when usefulness is genuinely fixed.",
+    "requests": [
+      "Using the baseline and legitimacy-fixed-at-zero evaluations, estimate relational-minus-attribute-bound differences in usefulness, adoption interest, and legitimacy separately within each dataset, with uncertainty intervals. Report the fixed legitimacy distribution as an implementation check. Show cross-dataset differences in the usefulness and interest effects, but distinguish randomized within-dataset effects from comparisons across separate evaluations. From existing documentation, report whether fixing legitimacy changed the psychological state or only the recorded score, and whether recruitment and procedures were comparable. Do not condition on measured post-description mediators.",
+      "Using the usefulness-fixed-at-zero evaluation, estimate relational-minus-attribute-bound differences in adoption interest and legitimacy, with uncertainty intervals, and report the usefulness distribution as an implementation check. Compare these effects with the corresponding baseline estimates from the first analysis, clearly noting that cross-evaluation contrasts are not automatically randomized. From existing documentation, assess whether usefulness was psychologically fixed and whether other procedures changed. Report effect sizes and precision rather than using nonsignificance alone to declare a pathway absent."
+    ],
+    "selection_rationale": "These two analyses use the existing randomized description assignments under the two available mediator interventions. Together they distinguish the three benchmark predictions more directly than observational mediation: fixing legitimacy probes whether framing can reach usefulness independently, while fixing usefulness probes whether legitimacy can support interest independently. Baseline estimates establish whether framing has an effect in the unblocked setting. I do not select encouragement-based instrumental-variable analyses because their exclusion assumptions are unestablished. This is the final evidence request; ambiguous intervention validity or imprecise estimates will leave the mechanisms unresolved."
+  },
+  "stage": "C_round_3_proposer"
+}
