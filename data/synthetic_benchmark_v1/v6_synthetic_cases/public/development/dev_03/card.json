@@ -1,0 +1,15 @@
+{
+  "case_id": "dev_03",
+  "evidence_access": "An evidence desk can return at most TWO specific analyses or empirical investigations in ONE request, before any results are shown. Describe the desired analysis or research design in ordinary words. Feasibility is not guaranteed. No further evidence requests are allowed.",
+  "observations": 3600,
+  "study_design": "description randomized in the baseline evaluation",
+  "synthetic_population": "organizational technology evaluators",
+  "variables": {
+    "F": "measured buyer technical-fit index",
+    "L": "measured perceived legitimacy score",
+    "Q": "measured technical quality index",
+    "V": "measured perceived usefulness score",
+    "X": "relational (1) versus disability-attribute-bound (0) description",
+    "Y": "simulated expressed adoption interest (higher is greater)"
+  }
+}

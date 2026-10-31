@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "case_id": "dev_01",
+      "files_sha256": {
+        "baseline.csv": "c67779ae1d5e45568efa3971765c83aeed28323736ce10b4d31190812720c963",
+        "card.json": "bc8effd4420386da4f75401c9e132c3ac5988ff1a3553b0ac3925585044422b9",
+        "trial.csv": "c4abeb8d104c6c19fba3e69203ef51a7b340dec74b0642df31ebdfd01f330d50"
+      },
+      "partition": "development"
+    },
+    {
+      "case_id": "dev_02",
+      "files_sha256": {
+        "baseline.csv": "f5c0062a18c7b1e7668a89b85bf82f69e4938093f3f136b28b1441e7011c38e9",
+        "card.json": "e216c0079f10f51bae3b01fd62604ac0ee08b9475caa29152ba3db4129cafdbe",
+        "encouragement.csv": "9ba1e9fecc1e4f8789500e3afb4c84b5428657b112d7554c3ab3e1a530ad4b3e",
+        "neutralize_l.csv": "060ce2462eaa2a1bb167b5c36f1b98b4e8a08f0fc35949363ca668d1ed82e1f4",
+        "neutralize_v.csv": "bd08b2f57e4a71c25240b87be129d6591fb4f64a3f9f745370f89c2a05a7a771"
+      },
+      "partition": "development"
+    },
+    {
+      "case_id": "dev_03",
+      "files_sha256": {
+        "baseline.csv": "fcf1bc17765c8001f8f6641c7f76f4d2c1f1b38e142b2de1a663e8076e3c4181",
+        "card.json": "1c619636b13333f40ffd729be4bd783ec445c591e0370e1a1c036935ae368549",
+        "encouragement.csv": "8dde4af79d644cd58911c90258d86717d235f0310195b4c2b1b87f3a0d316667",
+        "neutralize_l.csv": "c03f467cdcf0a77d33e5f4ec8a92d2f36717bf907c38f26cf02674b2e6ad2dfa",
+        "neutralize_v.csv": "7ef238e532d14eaff3c9f5bb9d30c6f55b1d2b85fec24ac3573a124a4ce7a39d"
+      },
+      "partition": "development"
+    },
+    {
+      "case_id": "dev_04",
+      "files_sha256": {
+        "baseline.csv": "89dd40875638a69387ab4714f71b82d3b4264927e0f9e97e3908b6e9abb94eda",
+        "card.json": "39119b586bb022a6942910708e4b76d9c017abbc1378890ec347193218c94154"
+      },
+      "partition": "development"
+    },
+    {
+      "case_id": "dev_05",
+      "files_sha256": {
+        "baseline.csv": "ba45e0cfcb8b93bca1ae3eccbc13551c15cf17bf825cc7b31d495da71f19b7f9",
+        "card.json": "a185e1daa8f232c2682c66b507849c602534a76528f3c30a4b66ea00e162f137"
+      },
+      "partition": "development"
+    },
+    {
+      "case_id": "hol_01",
+      "files_sha256": {
+        "baseline.csv": "6693b6f225a7c60c7e942c5a2d32d921a035279a790c008047ef24c13d4245ed",
+        "card.json": "f6d68a91c59183092cd6d6dc6857976407dfb72f6e14f2c1ed1042b02c4f6bd5",
+        "trial.csv": "cd01a7c0245ea38dc761b8296982c3a46f6f6fa3fe3dbd27958f982af82cfc1c"
+      },
+      "partition": "holdout"
+    },
+    {
+      "case_id": "hol_02",
+      "files_sha256": {
+        "baseline.csv": "d2933ec196a8cd963fe8bba0148772dd13c2964aaf0aa8e0ff0d7494f664ee10",
+        "card.json": "a4cbb752540698dd71a4bcc6a890d7ea59e62c667af66a2d01e81b0ad8e71377",
+        "encouragement.csv": "0f966bea5cffc9a57d170c72f96594dce124148bc9226876683c2870b24516af",
+        "neutralize_l.csv": "2ec4ba7e3ba3b7d4dfefe95e61301f34ffddb12e0411c432e57508762b362b92",
+        "neutralize_v.csv": "e4453c641029bb49a2072e966447cedc378e6429ae767211279bb8254012ce0a"
+      },
+      "partition": "holdout"
+    },
+    {
+      "case_id": "hol_03",
+      "files_sha256": {
+        "baseline.csv": "ed3c819fc1a3a70b367fa26005385c2706aa393a33ca38db426e094ccc8f136c",
+        "card.json": "6524d3fa92a909b48cecfcc529d3ed73f2eaad5bae8ebe6f5b71c55001db4960",
+        "encouragement.csv": "4ba0251d6add4247c1a8834290f2e74843ed3f35073c3190649a8399d527f763",
+        "neutralize_l.csv": "35262f453e62063e5f81d265b200622752ec43e0c816e106fea96c4bf5fb252a",
+        "neutralize_v.csv": "4d3ca4e27df7c6f33572a0ee7bff9c0cb8cbdb80418d31dd2febf223a28edcd2"
+      },
+      "partition": "holdout"
+    },
+    {
+      "case_id": "hol_04",
+      "files_sha256": {
+        "baseline.csv": "251bd9a938426557ddb5f3958c0ceb966e00abe5b33f847b57bd9939ccf08521",
+        "card.json": "b0d49121b4440599f1c8505d4de5bb2b8b7a466224f701624dfb8d87ea27cd77"
+      },
+      "partition": "holdout"
+    },
+    {
+      "case_id": "hol_05",
+      "files_sha256": {
+        "baseline.csv": "07443c84581d777e6609928f7a1df7b78c15dfdc4e67efe06c661fb71713b22b",
+        "card.json": "d3c38e5726e3797a6bef95a37ecbd77d13c750aabafc56d9358c6becdf5c219d"
+      },
+      "partition": "holdout"
+    }
+  ],
+  "version": "EATD-V6-ONE-SHOT"
+}
