@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "input_usd_per_million": 2.0,
+  "cached_input_usd_per_million": 0.1,
+  "cache_write_usd_per_million": 2.5,
+  "output_usd_per_million": 10.0,
+  "timeout_seconds": 180,
+  "input_bound_overhead_tokens": 4096,
+  "pricing_verified_date": "2026-10-29",
+  "note": "Historical project configuration. Independently reverify model availability and pricing before any future authorization."
+}

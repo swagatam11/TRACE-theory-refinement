@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "dev_01",
+      "world": "selection",
+      "status": "PASS"
+    },
+    {
+      "case": "dev_02",
+      "world": "legitimacy_dominant",
+      "status": "PASS"
+    },
+    {
+      "case": "dev_03",
+      "world": "usefulness_dominant",
+      "status": "PASS"
+    },
+    {
+      "case": "dev_04",
+      "world": "fit_heterogeneity",
+      "status": "PASS"
+    },
+    {
+      "case": "dev_05",
+      "world": "observational_equivalence",
+      "status": "PASS"
+    },
+    {
+      "case": "hol_01",
+      "world": "selection",
+      "status": "PASS"
+    },
+    {
+      "case": "hol_02",
+      "world": "legitimacy_dominant",
+      "status": "PASS"
+    },
+    {
+      "case": "hol_03",
+      "world": "usefulness_dominant",
+      "status": "PASS"
+    },
+    {
+      "case": "hol_04",
+      "world": "fit_heterogeneity",
+      "status": "PASS"
+    },
+    {
+      "case": "hol_05",
+      "world": "observational_equivalence",
+      "status": "PASS"
+    }
+  ]
+}
