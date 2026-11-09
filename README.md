@@ -17,6 +17,7 @@ The point is not a more convincing final theory. It is a record you can inspect:
 | A terminal | [Reproduce offline](#reproduce-offline) below; no model calls, no API key |
 
 ## The three arms
+All arms use OpenAI gpt-6.1-sol (Responses API, reasoning_effort=low)
 
 - **A, question-only chatbot:** one plain response, with no background or data.
 - **B, evidence-equipped chatbot:** gets the question, neutral background, and the public data inventory. It proposes at most two analyses in one batch, receives whichever are feasible, then finalizes. No DAG or adversarial instruction.
