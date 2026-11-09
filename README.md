@@ -40,12 +40,10 @@ The public archive runs **7 public offline unit tests**; the separately held ful
 
 ## Research status and limits
 
-The October 30, 2026 `dev_03` synthetic pilot completed A/B/C. The TRACE arm completed 3 adversarial rounds and produced frozen, competing causal graphs before receiving requested evidence; its final response challenged a restrictive serial-mechanism account using randomized framing effects from separate mediator-intervention datasets. The standard evidence-equipped baseline also generated relevant mechanisms and requested mediator interventions. **No superiority claim is made.**
+The October 30, 2026 `dev_03` synthetic pilot completed A/B/C. The TRACE arm completed 3 adversarial rounds and produced frozen, competing causal graphs before receiving requested evidence; its final response challenged a restrictive serial-mechanism account using randomized framing effects from separate mediator-intervention datasets. The standard evidence-equipped baseline also generated relevant mechanisms and requested mediator interventions. 
 
-The study is synthetic expressed interest, not actual organizational adoption or empirical evidence for disability-stigma mechanisms. Follow-up datasets and mediator intervention assumptions were written into the generator; intervention fidelity and transport to field organizations remain untested. The evidence desk returned an incomplete subset of each arm's requests; evaluator labels alone do not constitute graph recovery or validated causal identification. The demonstration is a process proof of concept, not a powered benchmark or independent replication.
+The study is synthetic expressed interest. Follow-up datasets and mediator intervention assumptions were written into the generator; intervention fidelity and transport to field organizations remain untested. The evidence desk returned an incomplete subset of each arm's requests; evaluator labels alone do not constitute graph recovery or validated causal identification. The demonstration is a process proof of concept.
 
 ## Sharing separation
 
 **Public research artifact for the Stage 1 submission.**  
-**Keep private:** administrator causal generator, private truth and holdout datasets; they are retained in the separately delivered `TRACE_ADMIN_PRIVATE_REPRODUCIBILITY.zip` archive.  
-No API keys or credential files, encrypted reasoning contents, private causal equations, or holdout files are included.
