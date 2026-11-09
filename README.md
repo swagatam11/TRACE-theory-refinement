@@ -1,29 +1,38 @@
-# TRACE — Theory Refinement through Adversarial Causal Evaluation
+# TRACE: Theory Refinement through Adversarial Causal Evaluation
 
-**Stage 1 proof of concept | Frozen scientific implementation: EATD v6.3**  
-**Public-facing name:** TRACE. The historical Python module names, stage labels and hashes retain `EATD` to preserve scientific provenance. **No scientific code in the released frozen implementation has been rewritten or renamed.**
+TRACE is a multi-agent AI workflow for developing organizational theory that can be audited. A proposer states rival explanations as causal graphs (DAGs). An adversary challenges them over three fixed rounds. Before seeing any results, TRACE freezes its two leading graphs, their contrasting predictions, and one irreversible request for evidence. A deterministic evidence service runs the request on a shared dataset inventory. Final adjudication may revise the theory but cannot rewrite the predictions.
 
-## What is provided
+The point is not a more convincing final theory. It is a record you can inspect: which rivals were considered, what was predicted in advance, and which prediction the evidence broke.
 
-- `code/synthetic_benchmark_v1/v6_one_shot/`: the actual v6.3 three-round proposer–adversary workflow, arm A and B comparators, evidence desk, schemas and no-cost unit tests; reconstructed by layering the earlier reviewed patch archives in order. `generator.py`, `validate_v6.py`, and `admin_score.py`, plus generator-dependent tests, intentionally reside **only in a separate administrator archive**, because they contain or access hidden causal truth.
-- `code/synthetic_benchmark_v1/preflight_rebuild/transport.py`: frozen bounded request mock/transport contract.
-- `code/src/stigma_framing/`: support dependencies from the earlier audited project. The guarded live runner depends on additional persistent historical budget ledgers, provider credentials and project configuration; **do not interpret this archive as a plug-and-play authorized live API service**.
-- `data/.../public/development/dev_03/`: authentic baseline and follow-up synthetic datasets for the demonstration. `public/manifest.json` is the original full-manifest file; other cases are intentionally not shipped. `live_v6.py inspect` supports the included `dev_03` case only.
-- `demo_locked/dev_03/`: the **unmodified scientific stage records**, sanitized original model-input prompts, plaintext output fixtures, and a SHA-256 science-only lock. The original complete 48-file lock and provider envelopes (including encrypted reasoning payloads) are retained administrator-only.
-- `TECHNICAL_APPENDIX.md`: architecture and scientifically limited proof-of-concept interpretation.
-- `SOURCE_MANIFEST.json`: SHA-256 file hashes and archive provenance.
+**Submitted Stage 1 artifact (Organization Science special issue, Nov 2026):** [`v1.0-stage1-submission`](https://github.com/swagatam11/TRACE-theory-refinement/releases/tag/v1.0-stage1-submission). Later commits add documentation only. The locked scientific records are unchanged.
 
-## Architecture
+![TRACE workflow](docs/trace_flowchart.svg)
 
-**A (question-only ordinary chatbot):** one plain response; no background/data.  
-**B (evidence-equipped ordinary chatbot):** question, neutral background and public data inventory; independently proposes at most two analyses in one batch, receives those feasible, then finalizes; no mandatory DAG or adversarial instruction.  
-**C (TRACE):** constructs competing DAGs, completes **three** proposer–adversary exchanges *before seeing any test results*, freezes predictions, submits one irreversible evidence batch (at most two analyses) and adjudicates.
+## Start here
 
-Data availability is disclosed neutrally and equally to B/C. The evidence service is **not** an arbitrary statistical-programming agent: it interprets a bounded family of analyses and may refuse or only partially fulfill a complex request. The actual demo documents this limitation.
+| If you have… | Read |
+|---|---|
+| 10 minutes | [**VIGNETTE.md**](VIGNETTE.md): one case walked through step by step, every claim linked to its locked record |
+| 20 minutes | [REVIEWER_GUIDE.md](REVIEWER_GUIDE.md) and [TECHNICAL_APPENDIX.md](TECHNICAL_APPENDIX.md) |
+| A terminal | [Reproduce offline](#reproduce-offline) below; no model calls, no API key |
 
-## Offline demo
+## The three arms
 
-From the project root of this archive, Python 3.11+:
+- **A, question-only chatbot:** one plain response, with no background or data.
+- **B, evidence-equipped chatbot:** gets the question, neutral background, and the public data inventory. It proposes at most two analyses in one batch, receives whichever are feasible, then finalizes. No DAG or adversarial instruction.
+- **C, TRACE:** builds competing DAGs and completes **three** proposer–adversary exchanges *before seeing any test results*. It then freezes its predictions, submits one irreversible evidence batch of at most two analyses, and adjudicates.
+
+B and C see the same data inventory. The evidence service is not a general statistical-programming agent: it interprets a bounded family of analyses and may refuse a request or fulfil it only partially. The demonstration documents this limitation.
+
+## What the demonstration shows
+
+On 30 October 2026, all three arms completed the synthetic `dev_03` case. TRACE's rival set changed across the three adversarial rounds. It froze a parallel-pathways account against strict legitimacy-gated usefulness, then requested two mediator-intervention studies. Relational wording raised simulated adoption interest when either proposed mediator was fixed at zero: +0.605 (95% CI [0.477, 0.733]) and +0.416 (95% CI [0.307, 0.524]). TRACE retained the multiple-route account provisionally and rejected strict serial gating as a complete explanation. It left the actual mediating routes unresolved. Arm B also proposed relevant mechanisms, requested the same interventions, and reached a similarly qualified conclusion.
+
+**Limits.** The data are synthetic expressed interest, not observed adoption. Intervention assumptions were written into the generator, and transfer to field organizations is untested. The evidence service returned only part of each arm's requests. This is a process proof of concept, not evidence of superiority over B or of causal graph recovery.
+
+## Reproduce offline
+
+From the repository root, with Python 3.11+:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -34,16 +43,19 @@ python code/synthetic_benchmark_v1/v6_one_shot/live_v6.py inspect --case dev_03 
 python verify_locked_demo.py
 ```
 
-On Windows PowerShell use `$env:PYTHONPATH="code/synthetic_benchmark_v1/v6_one_shot;code/synthetic_benchmark_v1/preflight_rebuild;code/src"` instead of `export`. Running `inspect` **does not initiate provider calls**.
+On Windows PowerShell, use `$env:PYTHONPATH="code/synthetic_benchmark_v1/v6_one_shot;code/synthetic_benchmark_v1/preflight_rebuild;code/src"` instead of `export`. None of these commands call a model provider.
 
-The public archive runs **7 public offline unit tests**; the separately held full administrator source suite passed **55 offline tests** before packaging. `live` requires a separately authorized API connection and the full historical guarded-ledger project; **The Stage 1 artifact** is an offline replay by design; no provider calls are needed. A live harness that runs with a user-supplied API key is a Stage 2 deliverable.
+The public archive runs **7 offline unit tests**. The separately held full administrator suite passed **55 offline tests** before packaging. The Stage 1 artifact is an offline replay by design. A live harness that runs with a user-supplied API key is a Stage 2 deliverable.
 
-## Research status and limits
+## Repository contents
 
-The October 30, 2026 `dev_03` synthetic pilot completed A/B/C. The TRACE arm completed 3 adversarial rounds and produced frozen, competing causal graphs before receiving requested evidence; its final response challenged a restrictive serial-mechanism account using randomized framing effects from separate mediator-intervention datasets. The standard evidence-equipped baseline also generated relevant mechanisms and requested mediator interventions. 
+- `code/synthetic_benchmark_v1/v6_one_shot/`: the v6.3 three-round proposer–adversary workflow, the A and B comparators (`arms.py`), the evidence service (`evidence_desk.py`), schemas, and no-cost unit tests. `generator.py`, `validate_v6.py`, `admin_score.py`, and generator-dependent tests live **only in a separate administrator archive**, because they contain or access the hidden causal truth.
+- `code/synthetic_benchmark_v1/preflight_rebuild/transport.py`: the frozen, bounded request mock and transport contract.
+- `code/src/stigma_framing/`: support dependencies from the earlier audited project. The guarded live runner also needs historical budget ledgers, provider credentials, and project configuration, so **this archive is not a plug-and-play live API service**.
+- `data/.../public/development/dev_03/`: the baseline and intervention synthetic datasets for the demonstration. `public/manifest.json` is the original full manifest; other cases are intentionally not shipped.
+- `demo_locked/dev_03/`: the **unmodified scientific stage records**, sanitized model-input prompts, plaintext output fixtures, and a SHA-256 science-only lock. The full 48-file lock and provider envelopes are retained administrator-only.
+- `SOURCE_MANIFEST.json`: SHA-256 file hashes and archive provenance.
 
-The study is synthetic expressed interest. Follow-up datasets and mediator intervention assumptions were written into the generator; intervention fidelity and transport to field organizations remain untested. The evidence desk returned an incomplete subset of each arm's requests; evaluator labels alone do not constitute graph recovery or validated causal identification. The demonstration is a process proof of concept.
+## Naming and provenance
 
-## Sharing separation
-
-**Public research artifact for the Stage 1 submission.**  
+TRACE is the public name. Module names, stage labels, and hashes keep the internal prefix `EATD` (Evidence-Adversarial Theory Discovery) to preserve provenance. v6.3 is the frozen three-round, one-shot evidence implementation used here. No scientific code in the frozen implementation has been rewritten or renamed.
